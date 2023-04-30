@@ -1,0 +1,399 @@
+/*FONTS*/
+@font-face {
+  font-family: "Trebuchet MS";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Trebuchet MS"), url("../assets/fonts/trebuc.woff") format("woff");
+}
+@font-face {
+  font-family: "comfortaathin";
+  src: url("../assets/fonts/confortaa/comfortaa_thin-webfont.woff2") format("woff2"), url("../assets/fonts/confortaa/comfortaa_thin-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  font-family: "comfortaathin";
+  text-decoration: none;
+}
+
+/*Host style*/
+.host-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.host-top .host-top-left {
+  width: 30%;
+}
+.host-top .host-top-left .logo {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.host-top .host-top-left .logo img {
+  margin-right: 15px;
+}
+.host-top .host-top-right {
+  width: 30%;
+}
+.host-top .host-top-right .navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.host-top .host-top-right .navbar .acceuil {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-decoration: none;
+  color: #8186A0;
+}
+.host-top .host-top-right .navbar .profils {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-decoration: none;
+  color: #8186A0;
+}
+
+.host-bottom {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #F9F9FC;
+}
+.host-bottom .host-bottom-left {
+  width: 40%;
+}
+.host-bottom .host-bottom-left h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 160.5%;
+  color: #2F2E41;
+}
+.host-bottom .host-bottom-right {
+  margin-top: 80px;
+}
+
+.testbtn {
+  background: #5843E4;
+  border: none;
+  border-radius: 29px;
+  width: 100%;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  color: #FFFFFF;
+  height: 40px;
+}
+.testbtn:hover {
+  cursor: pointer;
+}
+
+/*Question style*/
+.question {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.question h1 {
+  border-bottom: 1.5px solid #2F2E41;
+}
+.question .yesorno {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+.question .yesorno button {
+  border: 2px solid #5843E4;
+  border-radius: 31px;
+  width: 40%;
+  height: 95px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 28px;
+  text-align: center;
+}
+.question .yesorno button:hover {
+  cursor: pointer;
+}
+.question .bforaf {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+}
+.question .bforaf a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  text-decoration-line: underline;
+  color: #2F2E41;
+}
+
+/*Besoins style*/
+.besoinText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #F9F9FC;
+  margin-top: 35px;
+}
+.besoinText h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 31px;
+  line-height: 35px;
+  text-align: center;
+  width: 35%;
+  margin-top: 75px;
+  color: #000000;
+}
+.besoinText h1 span {
+  color: #5843E4;
+}
+.besoinText a {
+  width: 20%;
+  margin-top: 20px;
+}
+.besoinText .text {
+  width: 60%;
+}
+.besoinText .text h3 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 132.5%;
+  margin-bottom: 5px;
+  color: #5843E4;
+}
+.besoinText .text p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 132.5%;
+  color: #2F2E41;
+  margin-top: 5px;
+}
+
+.profilbtn {
+  background: #5843E4;
+  border: none;
+  border-radius: 29px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  color: #FFFFFF;
+  width: 100%;
+  height: 40px;
+}
+.profilbtn:hover {
+  cursor: pointer;
+}
+
+.errorContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F9F9FC;
+}
+.errorContainer h1 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.errorContainer .oups {
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+/*COMPONENTS*/
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card:hover {
+  cursor: pointer;
+}
+.card p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  margin-right: 130px;
+  margin-bottom: 40px;
+  color: #5843E4;
+}
+.card .who {
+  display: flex;
+  flex-direction: column;
+}
+.card .who img {
+  width: 200px;
+  height: 200px;
+  border-radius: 160px;
+}
+.card .who p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 29px;
+  text-align: center;
+  margin-left: 25px;
+  margin-top: 30px;
+  color: #000000;
+}
+
+.profilContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profilContainer h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 132.5%;
+  margin-top: 50px;
+  text-align: center;
+  color: #2F2E41;
+}
+.profilContainer .vision {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 132.5%;
+  text-align: center;
+  margin-bottom: 70px;
+  margin-top: 40px;
+  color: #8186A0;
+}
+.profilContainer .profils {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  margin-left: 130px;
+}
+.profilContainer .profils .profils-top {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.profilContainer .profils .profils-bottom {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+/*FREELANCE*/
+.freelanceContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.freelanceContainer .freelance-card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+  margin-top: 70px;
+}
+.freelanceContainer .freelance-card .freelance-card-left img {
+  width: 220px;
+  border-radius: 150px;
+}
+.freelanceContainer .freelance-card .freelance-card-right .freelance-card-right-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.freelanceContainer .freelance-card .freelance-card-right .freelance-card-right-bottom h1 {
+  margin-top: 0px;
+}
+.freelanceContainer .freelance-card .freelance-card-right .freelance-card-right-bottom .dispo {
+  display: flex;
+  align-items: center;
+  width: 65%;
+  justify-content: space-around;
+}
+.freelanceContainer .freelance-card .freelance-card-right .freelance-card-right-bottom .dispo .green {
+  width: 13px;
+  height: 13px;
+  background-color: #57B894;
+  border-radius: 50px;
+}
+
+/*STACK COMPONENT*/
+.stacks {
+  display: flex;
+  justify-content: space-between;
+}
+.stacks .stack {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+.stacks .stack h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  margin: 0px 0px;
+  color: #2F2E41;
+}
+
+/*SHAME PAGE*/
+.shame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F9F9FC;
+  padding: 80px 0px;
+}
+.shame h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 31px;
+  line-height: 35px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #000000;
+}
+.shame p {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 22px;
+  text-align: center;
+  margin-top: 40px;
+  color: #000000;
+}
+
+.blue {
+  background-color: #5843E4;
+  color: white;
+}
+
+.white {
+  background-color: white;
+}/*# sourceMappingURL=App.css.map */
